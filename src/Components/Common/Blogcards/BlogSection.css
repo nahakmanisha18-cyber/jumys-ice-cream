@@ -1,0 +1,67 @@
+.blog-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.subtitle {
+    color: #e31e24;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Image responsive */
+.blog-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+
+.blog-date {
+    color: #e31e24;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.blog-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    background-color: #e31e24;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #c11b1f;
+}
+
+/* Mobile devices ke liye extra adjustments */
+@media (max-width: 576px) {
+    .title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .blog-img {
+        height: 220px;
+    }
+}

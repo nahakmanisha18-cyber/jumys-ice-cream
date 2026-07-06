@@ -1,0 +1,41 @@
+.editorial-section {
+    padding: 60px 0;
+    background-color: #fdfdfd;
+}
+
+.editorial-box {
+    padding: 20px 40px;
+    /* Dotted line sirf niche chahiye */
+    border-bottom: 2px dotted #e31e24;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.editorial-title {
+    color: #e31e24;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.editorial-desc {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+/* Ice cream icon ki positioning */
+.editorial-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 80px;
+}

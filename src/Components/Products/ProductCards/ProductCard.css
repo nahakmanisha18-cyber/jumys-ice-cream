@@ -1,0 +1,123 @@
+/* =========================
+   Product Section
+========================= */
+
+.product-card-section {
+    padding: 80px 40px;
+    background: #f8f9fb;
+}
+
+/* =========================
+   Section Title
+========================= */
+
+.product-card-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 35px !important;
+    position: relative;
+    display: inline-block;
+}
+
+.product-card-section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 80px;
+    height: 4px;
+    background: #ff2d55;
+    border-radius: 20px;
+}
+
+/* =========================
+   Product Grid
+========================= */
+
+.product-card-section .row {
+    row-gap: 30px;
+    margin-bottom: 70px;
+}
+
+/* =========================
+   Card Animation
+========================= */
+
+.product-card-section .col-lg-3 {
+    transition: all 0.3s ease;
+}
+
+.product-card-section .col-lg-3:hover {
+    transform: translateY(-8px);
+}
+
+/* =========================
+   Section Divider
+========================= */
+
+.product-card-section .row:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1200px) {
+
+    .product-card-section {
+        padding: 70px 25px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .product-card-section {
+        padding: 60px 20px;
+    }
+
+    .product-card-section h2 {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .product-card-section {
+        padding: 50px 15px;
+    }
+
+    .product-card-section h2 {
+        font-size: 28px;
+        margin-bottom: 25px !important;
+    }
+
+    .product-card-section h2::after {
+        width: 60px;
+    }
+
+    .product-card-section .row {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .product-card-section {
+        padding: 40px 10px;
+    }
+
+    .product-card-section h2 {
+        font-size: 24px;
+    }
+
+    .product-card-section h2::after {
+        width: 50px;
+        height: 3px;
+    }
+
+}

@@ -1,0 +1,49 @@
+.stats-section {
+    padding: 60px 20px;
+    background-color: #fcf6f6;
+    /* Light pink/cream background */
+}
+
+.stats-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-item h2 {
+    color: #d12e2e;
+    /* Red color from your theme */
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.separator {
+    color: #d12e2e;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .separator {
+        display: none;
+        /* Mobile par separator hatane ke liye */
+    }
+}

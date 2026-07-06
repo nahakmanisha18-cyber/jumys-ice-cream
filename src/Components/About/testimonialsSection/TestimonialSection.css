@@ -1,0 +1,74 @@
+.testimonial-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    color: #d12e2e;
+    /* Red color */
+    font-weight: 600;
+    font-family: 'cursive';
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: #fcf6f6;
+    /* Light peach background */
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    /* Image ko circle ke bahar nahi jane dega */
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Image ko stretch hone se bachayega */
+}
+
+.testimonial-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.testimonial-card .role {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.controls button {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .testimonial-grid {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,106 @@
+.heroSection {
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.subHeading {
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.mainTitle {
+    font-size: 2.5rem; 
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #000;
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .mainTitle {
+        font-size: 3.5rem;
+    }
+    .heroSection {
+        height: 88vh;
+    }
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btnRed, .btnBlack {
+    padding: 10px 25px; 
+    border-radius: 25px;
+    background-color: #e31e24;
+        border: none;
+}
+
+@media (min-width: 768px) {
+    .btnRed, .btnBlack {
+        padding: 12px 35px;
+    }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.animateSlide {
+    animation: slideInLeft 0.8s ease-out forwards;
+}.heroSlider {
+    position: relative;
+    width: 100%;
+}
+
+.btnRed:hover {
+    background-color: #c11b1f;
+}
+.btnBlack {
+    background-color: #000;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+}
+.btnBlack:hover {
+    background-color: #333;
+    
+}
+.imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.heroImg {
+    max-width: 80%;
+    height: auto;
+}
+
+.discountBadge {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: #e31e24;
+    color: white;
+    padding: 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+

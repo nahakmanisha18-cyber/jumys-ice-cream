@@ -1,0 +1,44 @@
+/* Container padding */
+.faq-section {
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-title {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Custom Accordion */
+.accordion-custom .accordion-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* Default state */
+.accordion-custom .accordion-button {
+    background-color: transparent !important;
+    color: #333 !important;
+    font-weight: 600;
+    box-shadow: none !important;
+    padding: 20px 16px;
+    font-size: 1.1rem;
+}
+
+/* Hover aur Active state mein Red Color */
+.accordion-custom .accordion-button:hover,
+.accordion-custom .accordion-button:not(.collapsed) {
+    color: #d12e2e !important;
+    /* Aapka Red Color */
+}
+
+/* Icon ka color change */
+.accordion-custom .accordion-button:not(.collapsed)::after {
+    filter: invert(20%) sepia(80%) saturate(2000%) hue-rotate(340deg);
+}
+
+.accordion-body {
+    color: #666;
+}

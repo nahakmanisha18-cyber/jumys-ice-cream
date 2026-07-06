@@ -1,0 +1,151 @@
+/* =========================
+   Wishlist Section
+========================= */
+
+.wishlist-section {
+    padding: 80px 40px;
+    background: #f8f9fb;
+    min-height: 100vh;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.wishlist-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.wishlist-breadcrumb {
+    color: #777;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.wishlist-breadcrumb span {
+    color: #ff2d55;
+    font-weight: 600;
+}
+
+/* =========================
+   Product Grid
+========================= */
+
+.wishlist-products {
+    row-gap: 30px;
+}
+
+/* =========================
+   Empty Wishlist
+========================= */
+
+.empty-wishlist {
+    text-align: center;
+    padding: 80px 30px;
+    max-width: 700px;
+    margin: 80px auto;
+}
+
+.empty-wishlist h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.empty-wishlist p {
+    font-size: 17px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* Wishlist Icon */
+
+
+
+/* =========================
+   Card Hover Effect
+========================= */
+
+.wishlist-products .col-lg-3,
+.wishlist-products .col-md-4,
+.wishlist-products .col-sm-6 {
+    transition: all 0.3s ease;
+}
+
+.wishlist-products .col-lg-3:hover,
+.wishlist-products .col-md-4:hover,
+.wishlist-products .col-sm-6:hover {
+    transform: translateY(-8px);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 992px) {
+
+    .wishlist-section {
+        padding: 60px 20px;
+    }
+
+    .wishlist-title {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .wishlist-section {
+        padding: 50px 15px;
+    }
+
+    .wishlist-title {
+        font-size: 28px;
+    }
+
+    .wishlist-breadcrumb {
+        margin-bottom: 30px;
+    }
+
+    .empty-wishlist {
+        padding: 60px 20px;
+    }
+
+    .empty-wishlist h3 {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .wishlist-section {
+        padding: 40px 10px;
+    }
+
+    .wishlist-title {
+        font-size: 24px;
+    }
+
+    .empty-wishlist {
+        padding: 50px 15px;
+    }
+
+    .empty-wishlist::before {
+        font-size: 55px;
+    }
+
+    .empty-wishlist h3 {
+        font-size: 22px;
+    }
+
+    .empty-wishlist p {
+        font-size: 15px;
+    }
+
+}

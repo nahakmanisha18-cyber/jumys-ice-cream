@@ -1,0 +1,128 @@
+/* --- BASE STYLES --- */
+.product-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* --- HOVER ICONS (Default for Desktop) --- */
+.hover-icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    /* Desktop Hover effect */
+    opacity: 0;
+    transition: 0.4s;
+    transform: translateX(10px);
+    color: #000;
+        font-size: 18px;
+        text-shadow: 1px 0 currentColor;
+}
+
+/* Desktop Hover Trigger */
+@media (min-width: 993px) {
+    .product-card:hover .hover-icons {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hover-icons span {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-footer-action {
+    display: none;
+}
+
+/* --- MOBILE & TABLET (Icons Permanent) --- */
+@media (max-width: 992px) {
+    .hover-icons {
+        opacity: 1 !important;
+        /* Hamesha dikhega */
+        transform: none !important;
+    }
+
+    .card-footer-action {
+        display: block;
+    }
+
+    /* Naya Footer Section Styling */
+    .card-footer-action {
+        display: flex;
+        border: 2px solid #979797;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+    .qty-selector {
+        display: flex;
+        flex: 0.5;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        border-right: 2px solid #979797;
+    }
+
+    .qty-selector button {
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .add-to-cart-btn {
+        flex: 1;
+        border: none;
+        background: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #000;
+            font-size: 18px;
+            text-shadow: 1px 0 currentColor;
+    }
+
+    .add-to-cart-btn:hover {
+        background: #f8f8f8;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .hover-icons .shopingcart {
+        display: none !important;
+    }
+}

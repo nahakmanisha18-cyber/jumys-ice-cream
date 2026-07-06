@@ -1,0 +1,242 @@
+/* =========================
+   BLOG DETAILS SECTION
+========================= */
+
+.blog-details {
+    padding: 80px 0;
+    background: #f8f9fb;
+    min-height: 100vh;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.blog-hero {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.blog-hero img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+}
+
+.blog-category {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: #ff2d55;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   CONTENT WRAPPER
+========================= */
+
+.blog-content-wrapper {
+    background: #fff;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   META INFO
+========================= */
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.blog-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.blog-meta svg {
+    color: #ff2d55;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.blog-content-wrapper h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.blog-intro {
+    font-size: 20px;
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   ARTICLE CONTENT
+========================= */
+
+.blog-full-content p {
+    font-size: 18px;
+    line-height: 2;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.blog-full-content img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.blog-full-content blockquote {
+    background: #fff5f7;
+    border-left: 5px solid #ff2d55;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 15px;
+    font-size: 24px;
+    line-height: 1.8;
+    font-style: italic;
+    color: #444;
+    font-weight: 500;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.blog-tags span {
+    padding: 10px 18px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.blog-tags span:hover {
+    background: #ff2d55;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SHARE SECTION
+========================= */
+
+.share-section {
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.share-section h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.share-section svg {
+    color: #ff2d55;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+    .blog-hero img {
+        height: 400px;
+    }
+
+    .blog-content-wrapper {
+        padding: 35px;
+    }
+
+    .blog-content-wrapper h1 {
+        font-size: 38px;
+    }
+
+    .blog-intro {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .blog-details {
+        padding: 50px 0;
+    }
+
+    .blog-hero img {
+        height: 280px;
+    }
+
+    .blog-content-wrapper {
+        padding: 25px;
+        border-radius: 18px;
+    }
+
+    .blog-content-wrapper h1 {
+        font-size: 28px;
+    }
+
+    .blog-intro {
+        font-size: 16px;
+    }
+
+    .blog-full-content p {
+        font-size: 16px;
+    }
+
+    .blog-full-content blockquote {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .blog-meta {
+        gap: 15px;
+    }
+}

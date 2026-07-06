@@ -1,0 +1,54 @@
+/* Mobile First Design */
+.about-hero {
+    width: 100%;
+    height: 300px;
+    /* Mobile ke liye height */
+    background: url('https://wpbingo-jumys.myshopify.com/cdn/shop/files/bg-breadcrumb.jpg?v=1715585479') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #000;
+    /* Text color */
+}
+
+/* Background overlay (Optional: agar image par text readable nahi hai) */
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    /* Light white overlay */
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Desktop ke liye adjustments */
+@media (min-width: 992px) {
+    .about-hero {
+        height: 400px;
+        /* Desktop ke liye height badha di */
+    }
+
+    .about-hero h1 {
+        font-size: 3.5rem;
+    }
+}
