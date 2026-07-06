@@ -69,19 +69,19 @@ This project was built to demonstrate strong front-end engineering skills — cl
 > Replace these placeholders with actual screenshots of your project.
 
 **🏠 Home Page**
-![Home](images/home.png)
+![Home](screenshots/home.png)
 
 **🛍️ Shop Page**
-![Shop](images/shop.png)
+![Shop](screenshots/shop.png)
 
 **📦 Product Details**
-![Product Details](images/product-details.png)
+![Product Details](screenshots/product-details.png)
 
 **🛒 Cart Page**
-![Cart](images/cart.png)
+![Cart](screenshots/cart.png)
 
 **❤️ Wishlist Page**
-![Wishlist](images/wishlist.png)
+![Wishlist](screenshots/wishlist.png)
 
 ---
 
